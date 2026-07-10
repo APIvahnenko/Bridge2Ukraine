@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate — Aid for Ukraine</title>
+    <title>Donate | Aid for Ukraine</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/webp" href="photos/logo-favicon_white.webp">
 </head>
@@ -30,7 +30,7 @@
             <!-- Right Side: Heading & Bank Details -->
             <div class="split-text donation-box">
                 <span class="subtitle">Direct Bank Transfer</span>
-                <h2>Sponsor a Journey</h2>
+                <h2>Donate</h2>
                 <p>Every £5,500 raised completely finances fuel, channel tolls, and customs documentation to route a multi-ton supply truck trip directly into Ukraine.</p>
                 
                 <!-- Bank Card Details -->
@@ -107,8 +107,26 @@
 
     .bank-action-buttons {
         display: flex;
+        flex-direction: column; /* Stacks buttons vertically on mobile */
         gap: 1rem;
+        align-items: center;
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+
+    .bank-action-buttons a {
+        width: 100%; /* Forces buttons to be full width */
+        max-width: 350px; /* Limits the width so they don't look stretched on desktop */
+        text-align: center;
         justify-content: center;
-        flex-wrap: wrap;
+        box-sizing: border-box; /* Ensures padding is included in the width */
+    }
+
+    /* Switch back to a row on larger screens */
+    @media (min-width: 600px) {
+        .bank-action-buttons {
+            flex-direction: row;
+            justify-content: center;
+        }
     }
 </style>
