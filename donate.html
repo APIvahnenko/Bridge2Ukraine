@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate — Aid for Ukraine</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/webp" href="photos/logo-favicon_white.webp">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="nav-bar">
+        <div class="logo-area">
+            <img src="photos/logo.webp" alt="Aid for Ukraine Logo" class="site-logo">
+            <a href="index.html" class="brand-name">Aid for Ukraine</a>
+        </div>
+        <a href="index.html" class="btn-primary">Our Work</a>
+    </nav>
+
+    <!-- MAIN DONATION CONTENT -->
+    <main class="section-container">
+        <div class="split-layout vertical-center">
+            
+            <!-- Left Side: Visual Context -->
+            <div class="donation-hero-image">
+                <img src="photos/our_work-packed_lorry_ready_to_set_off_to_Ukraine-landscape.webp" alt="Packed lorry ready to set off to Ukraine">
+            </div>
+
+            <!-- Right Side: Heading & Bank Details -->
+            <div class="split-text donation-box">
+                <span class="subtitle">Direct Bank Transfer</span>
+                <h2>Sponsor a Journey</h2>
+                <p>Every £5,500 raised completely finances fuel, channel tolls, and customs documentation to route a multi-ton supply truck trip directly into Ukraine.</p>
+                
+                <!-- Bank Card Details -->
+                <div class="bank-details-subcard">
+                    <p><strong>Bank:</strong> NatWest</p>
+                    <p><strong>Account Name:</strong> Aid Ukraine Logistics</p>
+                    <p><strong>Sort Code:</strong> XX-XX-XX</p>
+                    <p><strong>Account No:</strong> XXXXXXXX</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- SECONDARY ACTIONS -->
+        <div class="narrow-container donation-extra-actions">
+            <p>Want to track where your money goes?</p>
+            <div class="bank-action-buttons">
+                <a href="https://forms.google.com" target="_blank" class="btn-primary yellow-btn">Sign Up for Journey Updates</a>
+                <a href="https://instagram.com/aidforukraine" target="_blank" class="btn-outline">Follow Our Work on Instagram</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>
+
+<style>
+    /* --- DONATION PAGE LAYOUT --- */
+    .donation-hero-image img {
+        border-radius: 8px;
+        width: 100%;
+        display: block;
+    }
+
+    .donation-box {
+        background-color: rgba(0, 87, 183, 0.05);
+        border-radius: 12px;
+        padding: 2.5rem;
+    }
+
+    .donation-box > p {
+        margin-bottom: 1.5rem;
+        color: var(--text-muted); /* Uses your token variable */
+    }
+
+    .bank-details-subcard {
+        background: var(--white); /* Uses your token variable */
+        padding: 1.5rem;
+        border-radius: 8px;
+        border: 2px solid var(--ua-blue); /* Uses your token variable */
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .bank-details-subcard p {
+        margin-bottom: 0.5rem;
+    }
+
+    .bank-details-subcard p:last-child {
+        margin-bottom: 0;
+    }
+
+    .donation-extra-actions {
+        margin-top: 4rem;
+        padding-top: 2rem;
+        border-top: 1px solid #eeeeee;
+    }
+
+    .donation-extra-actions p {
+        margin-bottom: 1.5rem;
+        font-weight: 700;
+        color: var(--text-muted);
+    }
+
+    .bank-action-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+</style>
