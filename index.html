@@ -6,6 +6,7 @@
     <title>Bridge2Ukraine</title>
     <link rel="icon" type="image/webp" href="photos/logo.webp">
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="image" href="photos/hero-children-landscape.webp" type="image/webp">
 </head>
 <body>
 
@@ -20,6 +21,12 @@
 
     <!-- 2. HERO SECTION -->
     <header class="hero">
+        <img 
+            src="photos/hero-children-landscape.webp" 
+            alt="Children recieving donated aid in Ukraine" 
+            fetchpriority="high"
+            class="hero-bg"
+        >
         <div class="hero-overlay-card">
             <h1>Delivering Life Changing Aid for Ukraine</h1>
             <p>We power the resilience of war-affected communities by delivering basic and essential aid to the people near the frontline.</p>
@@ -138,12 +145,12 @@
 
                 <div class="mosaic-item small-square js-hidden">
                     <img src="photos/stories-kids reciving PE kit-square.webp" alt="Kids receiving PE kit">
-                    <div class="mosaic-overlay"><p>Kids receiving PE kit</p></div>
+                    <div class="mosaic-overlay"><p>Kids receiving PE kits</p></div>
                 </div>
 
                 <div class="mosaic-item wide js-hidden">
                     <img src="photos/stories-kids using donated gym equipment-landscape.webp" alt="Kids using donated gym equipment">
-                    <div class="mosaic-overlay"><p>Kids using donated gym equipment</p></div>
+                    <div class="mosaic-overlay"><p>Kids using donated David Lloyd's gym equipment</p></div>
                 </div>
 
                 <div class="mosaic-item tall video-item js-hidden">

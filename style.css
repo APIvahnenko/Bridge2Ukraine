@@ -141,11 +141,23 @@ h2 {
 }
 
 .hero {
-    background: url('photos/hero-children-landscape.webp') center/cover no-repeat;
+    position: relative;
     min-height: 85vh;
     display: flex;
     align-items: center;
     padding: 3rem 1.5rem;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    z-index: -1;
 }
 
 .hero-overlay-card {
