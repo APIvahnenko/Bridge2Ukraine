@@ -1,11 +1,11 @@
 /* --- DESIGN TOKEN VARIABLES --- */
 :root {
-    --ua-blue: #0057B7;
-    --ua-yellow: #FFDD00;
+    --ua-blue: #005cbb;
+    --ua-yellow: #f6bf41;
     --cream: #F5EFE6;
-    --black: #111111;
-    --white: #FFFFFF;
-    --text-muted: #555555;
+    --black: #00224E;
+    --white: #F9F9F9;
+    --text-muted: #666666;
     --font-stack: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
 }
 
@@ -93,7 +93,7 @@ h2 {
 }
 
 .yellow-btn:hover {
-    background-color: #e6c600;
+    background-color: var(--white);
 }
 
 .btn-outline {
@@ -206,6 +206,113 @@ h2 {
     font-weight: 700;
     color: var(--ua-yellow);
     margin-top: 1.5rem;
+}
+
+/* --- SUSTAINABILITY SECTION --- */
+.sustainability-section {
+    background-color: #eef4f8; /* Soft subtle contrast from white/dark sections */
+    padding: 5rem 1.5rem;
+}
+
+.sustainability-header {
+    max-width: 800px;
+    margin: 0 auto 3.5rem auto;
+    text-align: center;
+}
+
+.sustainability-lead {
+    font-size: 1.15rem;
+    color: var(--black);
+    line-height: 1.6;
+    margin-top: 1rem;
+    opacity: 0.9;
+}
+
+.sustainability-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.sustainability-card {
+    background-color: var(--white);
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sustainability-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.sustainability-card h3 {
+    font-size: 1.4rem;
+    color: var(--ua-blue);
+    margin-bottom: 0.75rem;
+    font-weight: 800;
+}
+
+.sustainability-card p {
+    font-size: 1rem;
+    color: var(--black);
+    line-height: 1.5;
+    opacity: 0.85;
+}
+
+/* Infographic Display */
+.sustainability-infographic-wrapper {
+    margin: 2.5rem 0;
+    text-align: center;
+}
+
+.sustainability-infographic-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Rethought Journey Layout */
+.journey-header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 3rem auto;
+}
+
+.journey-lead {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+}
+
+.metric-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--ua-blue);
+    line-height: 1.1;
+    margin-bottom: 0.25rem;
+}
+
+.highlight .stat-number {
+    color: var(--ua-yellow);
+}
+
+.stat-label {
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.stat-desc {
+    font-size: 0.9rem;
+    color: var(--text-muted);
 }
 
 /* --- RESPONSIVE STORIES MASONRY SECTION --- */
@@ -435,6 +542,10 @@ h2 {
     background-color: var(--ua-blue);
     color: var(--white);
     border-left: none;
+}
+
+.info-card.highlight p {
+    color: var(--white);
 }
 
 .info-card h3 {
